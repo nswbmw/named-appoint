@@ -1,0 +1,30 @@
+{
+  "name": "named-appoint",
+  "version": "1.0.0",
+  "description": "Named Promise based on [appoint](https://github.com/nswbmw/appoint).",
+  "main": "appoint.js",
+  "keywords": [
+    "promise"
+  ],
+  "scripts": {
+    "jshint": "jshint appoint.js",
+    "test": "npm run jshint && mocha ./test.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nswbmw/named-appoint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nswbmw/named-appoint/issues"
+  },
+  "dependencies": {
+    "fn-args": "^2.0.0",
+    "immediate": "~3.2.3"
+  },
+  "devDependencies": {
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "promises-aplus-tests": "^2.1.2"
+  }
+}
