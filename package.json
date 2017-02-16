@@ -1,6 +1,6 @@
 {
   "name": "named-appoint",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Named Promise based on [appoint](https://github.com/nswbmw/appoint).",
   "main": "appoint.js",
   "keywords": [

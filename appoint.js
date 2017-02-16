@@ -43,6 +43,7 @@ Promise.prototype.then = function (onFulfilled, onRejected) {
   if (this.state !== PENDING) {
     var resolver = this.state === FULFILLED ? onFulfilled : onRejected;
     assignValues(promise, this);
+    promise.name = resolver.name || promise.name;
     unwrap(promise, resolver, this.value);
   } else {
     this.queue.push(new QueueItem(promise, onFulfilled, onRejected));
